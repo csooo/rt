@@ -19,7 +19,9 @@ const User = mongoose.model('User', new mongoose.Schema({
         default: Date.now,
     },
 }));
-
+app.get('/'), async (req, res) => {
+        res.status(201).send({ message: 'User added successfully');
+    });
 app.post('/', async (req, res) => {
     const {count,content} = req.body
     console.log(count,content)
