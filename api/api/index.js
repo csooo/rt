@@ -1,2 +1,2 @@
-import index from './index.js';
-export default index;
+import app from '../index.js';
+export default app;
