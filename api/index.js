@@ -2,7 +2,6 @@ const express = require('express');
 const app = express();
 const cors = require('cors')
 app.use(cors())
-const port = 5000;
 app.use(express.json());
 const mongoose = require('mongoose');
 mongoose.connect('mongodb+srv://password:SHpq6uDbAKJNNxB2@cluster0.yxevysz.mongodb.net/?retryWrites=true&w=majority');
@@ -53,4 +52,3 @@ app.post('/', async (req, res) => {
 app.listen(8080 || process.env.PORT, function() {
     console.log('Example app listening on port 3000!');
 });
-module.exports = app
