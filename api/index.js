@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const cors = require('cors')
 app.use(cors())
+const port = 5000;
 app.use(express.json());
 const mongoose = require('mongoose');
 mongoose.connect('mongodb+srv://password:SHpq6uDbAKJNNxB2@cluster0.yxevysz.mongodb.net/?retryWrites=true&w=majority');
@@ -18,12 +19,12 @@ const User = mongoose.model('User', new mongoose.Schema({
         default: Date.now,
     },
 }));
-app.get('/app'), async (req, res) => {
+app.get('/app', async (req, res) => {
     res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Headers", "X-Requested-With");
-    res.setHeader('Cache-Control', 's-max-age=1, stale-while-revalidate');
-    res.json({ 'message': 'User added successfully'});
-    }
+  res.header("Access-Control-Allow-Headers", "X-Requested-With");
+  res.setHeader('Cache-Control', 's-max-age=1, stale-while-revalidate');
+        res.json({ 'message': 'User added successfully'});
+    })
 app.post('/', async (req, res) => {
     res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Headers", "X-Requested-With");
@@ -49,6 +50,7 @@ app.post('/', async (req, res) => {
         res.status(500).send({ message: 'Internal Server Error' });
     }
 });
-app.listen(process.env.PORT||8080, function() {
+app.listen(3000, function() {
     console.log('Example app listening on port 3000!');
 });
+module.exports = app
