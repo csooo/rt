@@ -1,9 +1,7 @@
 const express = require('express');
 const app = express();
 const cors = require('cors')
-app.use(cors({
-        origin: 'https://rt-x4vb-csooo.vercel.app/'
-}))
+app.use(cors())
 const port = 5000;
 app.use(express.json());
 const mongoose = require('mongoose');
