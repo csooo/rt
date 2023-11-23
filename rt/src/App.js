@@ -26,7 +26,7 @@ function App() {
     alert('wa ta kteb chi 7aja')
   }else{
     const data = {count,content}
-    await axios.post('http://localhost:5000',data)
+    await axios.post('rt-6le8pkttn-csooo.vercel.app',data)
     .then(res => {
          console.log(res)
     })
