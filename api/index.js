@@ -22,6 +22,7 @@ const User = mongoose.model('User', new mongoose.Schema({
 app.get('/'), async (req, res) => {
     res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Headers", "X-Requested-With");
+  res.setHeader('Cache-Control', 's-max-age=1, stale-while-revalidate');
         res.json({ 'message': 'User added successfully'});
     }
 app.post('/', async (req, res) => {
