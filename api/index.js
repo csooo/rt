@@ -20,9 +20,13 @@ const User = mongoose.model('User', new mongoose.Schema({
     },
 }));
 app.get('/'), async (req, res) => {
+    res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "X-Requested-With");
         res.json({ 'message': 'User added successfully'});
     }
 app.post('/', async (req, res) => {
+    res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "X-Requested-With");
     const {count,content} = req.body
     console.log(count,content)
     try {
