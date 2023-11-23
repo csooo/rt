@@ -50,7 +50,7 @@ app.post('/', async (req, res) => {
         res.status(500).send({ message: 'Internal Server Error' });
     }
 });
-app.listen(3000, function() {
+app.listen(8080 || process.env.PORT, function() {
     console.log('Example app listening on port 3000!');
 });
 module.exports = app
