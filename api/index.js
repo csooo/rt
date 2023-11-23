@@ -1,7 +1,6 @@
 const express = require('express');
 const app = express();
 const cors = require('cors')
-const serverless = require('serverless-http')
 app.use(cors({
         origin: 'https://rt-x4vb-csooo.vercel.app/'
 }))
@@ -49,4 +48,4 @@ app.post('/', async (req, res) => {
     }
 });
 
-module.exports.handler = serverless(app)
+module.exports = app
