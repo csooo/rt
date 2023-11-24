@@ -161,6 +161,8 @@ form .btn button:hover{
   .container {
     padding: 15px 20px;
     margin: 0 20px;
+    align-items: center;
+    background: #111;
   }
   .star-widget label {
     font-size: 30px;
@@ -171,6 +173,8 @@ form .btn button:hover{
     .container {
       padding: 10px 15px;
       margin: 0 20px;
+      align-items: center;
+      background: #111;
     }
     .star-widget label {
       font-size: 30px;
@@ -185,6 +189,8 @@ form .btn button:hover{
       .container {
         padding: 10px 15px;
         margin: 0 20px;
+        align-items: center;
+        background: #111;
       }
       .star-widget label {
         font-size:26px;
