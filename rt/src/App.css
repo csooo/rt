@@ -166,64 +166,7 @@ form .btn button:hover{
     font-size: 30px;
   }
   }
-  @media (max-width: 500px) {
-
-  /* Content Width */
-  .container {
-    width: 90%; 
-    max-width: 500px;
-  }
-
-  /* Padding/Margins */
-  .container {
-    padding: 10px;
-  }
-  
-  section {
-    margin: 20px 0; 
-  }
-
-  /* Text Sizing */
-  body {
-    font-size: 14px;
-  }
-  
-  h1 {
-    font-size: 1.5em;
-  }
-
-  /* Buttons & Inputs */
-  .btn button {
-    min-height: 40px;
-    font-size: 18px; 
-    padding: 12px;
-  }
-  
-  input[type="text"] {
-    padding: 12px 16px;
-    font-size: 16px;  
-  }
-  
-}
-
-/* Star Widget Adjustments */ 
-.star-widget label {
-  padding: 5px; /* Tighter spacing */
-}
-
-/* Safe Fallback Styles */
-body {
-  line-height: 1.5;
-} 
-
-section {
-  padding: 20px 0;
-}
-
-img {
-  max-width: 100%;
-  height: auto; 
-}
+ 
   @media only screen and (max-width: 360px) {
     .container {
       padding: 10px 15px;
@@ -236,6 +179,8 @@ img {
       display: block;
     }
     }
+
+   
     @media only screen and (max-width: 320px) {
       .container {
         padding: 10px 15px;
