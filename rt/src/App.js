@@ -87,7 +87,7 @@ function App() {
 
       </header>
       <div class="textarea">
-        <textarea cols="30" onChange={(e)=>{setContent(e.target.value);}} placeholder="Describe your experience.."></textarea>
+        <textarea cols="30" onChange={(e)=>{setContent(e.target.value);}} placeholder="Enter your ID and leave a comment for us..."></textarea>
         
         
         
