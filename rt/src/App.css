@@ -72,10 +72,10 @@ input#rate-5:checked ~ label{
   text-shadow: 0 0 20px #952;
 }
 #rate-1:checked ~ form header:before{
-  content: " So Bad 🤮";
+  content: "  Bad 🤮";
 }
 #rate-2:checked ~ form header:before{
-  content: " Bad 😪";
+  content: " unattractive 😪";
 }
 #rate-3:checked ~ form header:before{
   content: " amazing 😁";
