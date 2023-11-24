@@ -161,7 +161,6 @@ form .btn button:hover{
   .container {
     padding: 15px 20px;
     margin: 0 20px;
-    display: flex;
     align-items: center;
     background: #111;
   }
@@ -174,7 +173,6 @@ form .btn button:hover{
     .container {
       padding: 10px 15px;
       margin: 0 20px;
-      display: flex;
       align-items: center;
       background: #111;
     }
@@ -191,7 +189,6 @@ form .btn button:hover{
       .container {
         padding: 10px 15px;
         margin: 0 20px;
-        display: flex;
         align-items: center;
         background: #111;
       }
