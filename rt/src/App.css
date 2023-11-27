@@ -125,6 +125,10 @@ form .btn{
   width: 100%;
   margin: 15px 0;
 }
+form .btn:hover{
+  backround-color:#fff;
+  color:black;
+}
 form .btn button{
   height: 100%;
   width: 100%;
